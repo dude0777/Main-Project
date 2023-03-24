@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	height: 100vh;
+   width: 100vw;
+	background: url('homebackground.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+}
+
+/*  */
+  
+  nav {
+	background-color: rgba(51, 51, 51, 0.8);
+	color: #fff;
+	padding: 10px 20px;
+  }
+  
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+  }
+  
+
+  
+  nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+  }
+  
+  nav ul li a:hover::after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	animation: underline 0.2s forwards;
+  }
+  
+  @keyframes underline {
+	from {
+	  transform: scaleX(0);
+	}
+	to {
+	  transform: scaleX(1);
+	}
+  }
+  .text{
+    color: white;
+    font-family: 'Lora', serif;
+font-family: 'Raleway', sans-serif;
+font-size: 4.5rem;
+ background: linear-gradient(to bottom,white 60% ,black);
+     background-clip: text;
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 4rem;
+    color: transparent;
+  }
+  .container{
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+	position: relative;
+  }
